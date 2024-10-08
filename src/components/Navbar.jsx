@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <header className='header'>
+    <header className='header flex justify-between px-20 py-1 bg-transparent'>
       <NavLink to='/'>
         <img src="" alt='logo' className='w-18 h-18 object-contain' />
       </NavLink>
