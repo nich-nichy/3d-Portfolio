@@ -2,15 +2,19 @@ import { Link } from "react-router-dom";
 
 const CTA = () => {
   return (
-    <section className='cta'>
-      <p className='cta-text'>
-        Have a project in mind? <br className='sm:block hidden' />
-        Let’s build something together!
+    <section className="flex flex-col items-center bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-12 px-4 rounded-lg shadow-lg">
+      <p className="text-2xl md:text-3xl font-semibold text-center mb-6">
+        Looking to hire? <br className="sm:block hidden" />
+        I'm available for work!
       </p>
-      <Link to='/contact' className='btn'>
-        Contact
+      <Link
+        to="/contact"
+        className="bg-white text-indigo-600 font-bold py-3 px-6 rounded-lg shadow-md hover:bg-indigo-50 transition-all duration-300"
+      >
+        Contact me
       </Link>
     </section>
+
   );
 };
 

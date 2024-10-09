@@ -1,4 +1,4 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
+import { aroopa, guvi } from "../assets/images";
 import {
     car,
     contact,
@@ -11,45 +11,30 @@ import {
     javascript,
     linkedin,
     mongodb,
-    motion,
     mui,
     nextjs,
     nodejs,
     pricewise,
     react,
     redux,
-    sass,
     snapgram,
     summiz,
     tailwindcss,
     threads,
-    typescript
+    typescript,
+    python,
+    postgres,
 } from "../assets/icons";
 
 export const skills = [
     {
-        imageUrl: css,
-        name: "CSS",
+        imageUrl: html,
+        name: "HTML",
         type: "Frontend",
     },
     {
-        imageUrl: express,
-        name: "Express",
-        type: "Backend",
-    },
-    {
-        imageUrl: git,
-        name: "Git",
-        type: "Version Control",
-    },
-    {
-        imageUrl: github,
-        name: "GitHub",
-        type: "Version Control",
-    },
-    {
-        imageUrl: html,
-        name: "HTML",
+        imageUrl: css,
+        name: "CSS",
         type: "Frontend",
     },
     {
@@ -58,14 +43,24 @@ export const skills = [
         type: "Frontend",
     },
     {
-        imageUrl: mongodb,
-        name: "MongoDB",
-        type: "Database",
+        imageUrl: typescript,
+        name: "TypeScript",
+        type: "Frontend",
     },
     {
-        imageUrl: motion,
-        name: "Motion",
-        type: "Animation",
+        imageUrl: react,
+        name: "React",
+        type: "Frontend",
+    },
+    {
+        imageUrl: redux,
+        name: "Redux",
+        type: "State Management",
+    },
+    {
+        imageUrl: tailwindcss,
+        name: "Tailwind CSS",
+        type: "Frontend",
     },
     {
         imageUrl: mui,
@@ -83,83 +78,79 @@ export const skills = [
         type: "Backend",
     },
     {
-        imageUrl: react,
-        name: "React",
-        type: "Frontend",
+        imageUrl: express,
+        name: "Express",
+        type: "Backend",
     },
     {
-        imageUrl: redux,
-        name: "Redux",
-        type: "State Management",
+        imageUrl: mongodb,
+        name: "MongoDB",
+        type: "Database",
     },
     {
-        imageUrl: sass,
-        name: "Sass",
-        type: "Frontend",
+        imageUrl: postgres,
+        name: "PostgreSQL",
+        type: "Database",
     },
     {
-        imageUrl: tailwindcss,
-        name: "Tailwind CSS",
-        type: "Frontend",
+        imageUrl: git,
+        name: "Git",
+        type: "Version Control",
     },
     {
-        imageUrl: typescript,
-        name: "TypeScript",
-        type: "Frontend",
-    }
+        imageUrl: github,
+        name: "GitHub",
+        type: "Version Control",
+    },
+    {
+        imageUrl: python,
+        name: "Python",
+        type: "Programming Language",
+    },
 ];
 
 export const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
-        iconBg: "#accbe1",
-        date: "March 2020 - April 2021",
+        title: "Intern",
+        company_name: "Aroopa Technologies Pvt. Ltd.",
+        icon: aroopa,
+        iconBg: "#fff",
+        date: "February 2023 - August 2023",
+        months: "7 months",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Learned web development fundamentals and gained practical experience in building web applications.",
+            "Learned Microsoft power BI and created interactive dashboard's.",
+            "From the second month onwards, I entered on a project called Aroopa Apps, where I was responsible for authenticating third-party service integration like Amazon, Google, Microsoft etc.",
         ],
     },
     {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
-        iconBg: "#fbc3bc",
-        date: "Jan 2021 - Feb 2022",
+        title: "MERN Developer - Trainee",
+        company_name: "Aroopa Technologies Pvt. Ltd.",
+        icon: aroopa,
+        iconBg: "#fff",
+        date: "September 2023 - May 2024",
+        months: "9 months",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+            "Developed and maintained web applications using React JS, React Redux, Node JS, and Express JS.",
+            "I worked on a module called Integration, where I created a system that authenticates more than 15 OAuth 2.0 integrations, such as Google, Microsoft, Amazon etc.",
+            "Leveraged Amazon AWS Secret Vault and Scheduler to securely manage user tokens and automate the refresh process.",
+            "I also developed microservices (RESTful API using Node.js and Express.js) that integrated third-party services into the Product, such as Google Spreadsheets, Microsoft Teams, and Zoho CRM.",
+            "Participated in guiding and providing constructive feedback on OAuth 2.0 and microservices to other developers in our product based project.",
+            "Developed a reusable node that allows users to easily add Google Sheets functionality by drag and drop to any node in the Flow workflow module.",
             "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Collaborated with team members on Azure DevOps to ensure smooth code integration, push, pull, and commit operations."
         ],
     },
     {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#b7e4c7",
-        date: "Jan 2022 - Jan 2023",
+        title: "Upskilling - Full stack Development",
+        company_name: "Guvi",
+        icon: guvi,
+        iconBg: "#fff",
+        date: "July 2024 - September 2024",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#a2d2ff",
-        date: "Jan 2023 - Present",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Learned more topics in web development",
+            "Learning DSA using Python and solved some problems in Codekata and Leetcode.",
+            "Learned more about Prompt Engineering and creating some AI projects as well.",
         ],
     },
 ];
@@ -173,12 +164,12 @@ export const socialLinks = [
     {
         name: 'GitHub',
         iconUrl: github,
-        link: 'https://github.com/YourGitHubUsername',
+        link: 'https://github.com/nich-nichy',
     },
     {
         name: 'LinkedIn',
         iconUrl: linkedin,
-        link: 'https://www.linkedin.com/in/YourLinkedInUsername',
+        link: 'https://www.linkedin.com/in/mohamed-nishath-m-049516191/',
     }
 ];
 
