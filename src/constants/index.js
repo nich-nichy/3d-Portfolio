@@ -178,43 +178,33 @@ export const projects = [
     {
         iconUrl: pricewise,
         theme: 'btn-back-red',
-        name: 'Amazon Price Tracker',
-        description: '',
-        link: ''
+        name: 'ORS',
+        description: 'An Online Vehicle Rental System, created as a task provided by Guvi',
+        link: '',
+        gitLink: ''
     },
     {
         iconUrl: threads,
         theme: 'btn-back-green',
-        name: 'Full Stack Threads Clone',
-        description: '',
-        link: ''
+        name: 'Nizzie',
+        description: 'An automation builder that sends messages to discord',
+        link: '',
+        gitLink: ''
     },
     {
         iconUrl: car,
         theme: 'btn-back-blue',
-        name: 'Car Finding App',
-        description: '',
-        link: ''
+        name: 'OAuth Authenticator',
+        description: 'An package that authenticates third-party services, this project is still in progress',
+        link: '',
+        gitLink: ''
     },
     {
         iconUrl: snapgram,
         theme: 'btn-back-pink',
-        name: 'Full Stack Instagram Clone',
-        description: '',
-        link: ''
+        name: 'AI Chatbot',
+        description: 'An AI agent set appointments, this project is still in progress',
+        link: '',
+        gitLink: ''
     },
-    {
-        iconUrl: estate,
-        theme: 'btn-back-black',
-        name: 'Real-Estate Application',
-        description: '',
-        link: ''
-    },
-    {
-        iconUrl: summiz,
-        theme: 'btn-back-yellow',
-        name: 'AI Summarizer Application',
-        description: '',
-        link: ''
-    }
 ];

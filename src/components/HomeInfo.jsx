@@ -31,7 +31,7 @@ const HomeInfo = ({ currentStage }) => {
     return (
       <div className='info-box bg-amber-400 text-white py-6 px-10 rounded-lg shadow-md'>
         <p className='font-medium text-center sm:text-xl'>
-          I've worked on several projects over the years.
+          I've worked on several projects over the month's.
         </p>
 
         <Link to='/projects' className='bg-amber-800 py-2 px-4 m-2 rounded flex justify-center items-center gap-2 hover:bg-amber-600'>

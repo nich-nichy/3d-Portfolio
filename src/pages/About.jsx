@@ -5,6 +5,7 @@ import {
 import { CTA } from "../components";
 import { experiences, skills } from "../constants";
 import "react-vertical-timeline-component/style.min.css";
+import resume from '../assets/pdf/resume.pdf';
 
 const About = () => {
   return (
@@ -22,6 +23,21 @@ const About = () => {
           A full-stack web developer, specializing in technical education through
           hands-on learning and building modern applications
         </p>
+      </div>
+      <div className="flex items-center justify-center mt-3">
+        <button
+          onClick={() => {
+            const link = document.createElement('a');
+            link.href = resume; // Path to your resume file
+            link.setAttribute('download', 'Nishath_Resume.pdf'); // File name for the download
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+          }}
+          className="bg-amber-500 text-white font-semibold py-2 px-4 rounded-lg shadow-lg hover:bg-amber-600 focus:outline-none focus:ring-2 focus:ring-amber-300 transition ease-in-out duration-200"
+        >
+          Resume
+        </button>
       </div>
 
       <div className="py-16">
