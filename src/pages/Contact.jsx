@@ -3,9 +3,12 @@ import { Canvas } from "@react-three/fiber";
 import { Suspense, useRef, useState } from "react";
 import useAlert from "../hooks/useAlert";
 import { Alert, Loader } from "../components";
+import Swal from 'sweetalert2'
+import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
   const formRef = useRef();
+  const navigate = useNavigate();
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const { alert, showAlert, hideAlert } = useAlert();
   const [loading, setLoading] = useState(false);
@@ -29,9 +32,9 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Nishath",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "nishathmohamed01@gmail.com",
           message: form.message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
@@ -39,26 +42,35 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
+          Swal.fire({
+            title: "Thank you for your message 😃",
+            width: 600,
+            padding: "3em",
+            color: "#716add",
+            background: "#fff url(/images/trees.png)",
+            backdrop: `
+    rgba(0,0,123,0.4)
+    url("/images/nyan-cat.gif")
+    left top
+    no-repeat
+  `
+          });
+          navigate('/')
           showAlert({
             show: true,
             text: "Thank you for your message 😃",
             type: "success",
           });
-
-          setTimeout(() => {
-            hideAlert(false);
-            setCurrentAnimation("idle");
-            setForm({
-              name: "",
-              email: "",
-              message: "",
-            });
-          }, [3000]);
         },
         (error) => {
           setLoading(false);
           console.error(error);
           setCurrentAnimation("idle");
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "I didn't receive your message 😢",
+          });
           showAlert({
             show: true,
             text: "I didn't receive your message 😢",
