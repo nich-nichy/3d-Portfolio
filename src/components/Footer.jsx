@@ -4,27 +4,25 @@ import { socialLinks } from "../constants";
 
 const Footer = () => {
   return (
-    <footer className='footer font-poppins'>
-      <hr className='border-slate-200' />
+    <footer className="text-white py-6 font-poppins">
+      <hr className="border-gray-200 mb-6" />
 
-      <div className='footer-container'>
-        <p>
-          © 2024 <strong>Nishath</strong>. All rights reserved.
-        </p>
-
-        <div className='flex gap-3 justify-center items-center'>
-          {socialLinks.map((link) => (
-            <Link key={link.name} to={link.link} target='_blank'>
-              <img
-                src={link.iconUrl}
-                alt={link.name}
-                className='w-6 h-6 object-contain'
-              />
-            </Link>
-          ))}
-        </div>
+      <div className="flex justify-center space-x-6">
+        {socialLinks.map((link) => (
+          <Link key={link.name} to={link.link} target="_blank" className="hover:opacity-75 transition-opacity duration-300">
+            <img
+              src={link.iconUrl}
+              alt={link.name}
+              className="w-8 h-8 object-contain"
+            />
+          </Link>
+        ))}
       </div>
+      {/* <div className="mt-6 text-center text-gray-400 text-sm">
+        © {new Date().getFullYear()} Nishath. All rights reserved.
+      </div> */}
     </footer>
+
   );
 };
 

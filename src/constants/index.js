@@ -143,7 +143,7 @@ export const experiences = [
         ],
     },
     {
-        title: "Upskilling - Full stack Development",
+        title: "Upskilling - Full stack web development",
         company_name: "Guvi",
         icon: guvi,
         iconBg: "#fff",
@@ -151,7 +151,7 @@ export const experiences = [
         points: [
             "Learned more topics in web development",
             "Learning DSA using Python and solved some problems in Codekata and Leetcode.",
-            "Learned more about Prompt Engineering and creating some AI projects as well.",
+            "Learned more about Prompt Engineering and creating some AI projects.",
         ],
     },
 ];
