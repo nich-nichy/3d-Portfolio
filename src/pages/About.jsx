@@ -13,7 +13,7 @@ const About = () => {
     <section className="max-w-7xl mx-auto pt-24 px-6 md:px-16 lg:px-24">
       <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-center">
         Hello, I'm{" "}
-        <span className="font-semibold drop-shadow-md underline decoration-green-300">
+        <span className="font-semibold drop-shadow-md underline decoration-amber-300">
           Nishath
         </span>{" "}
         👋

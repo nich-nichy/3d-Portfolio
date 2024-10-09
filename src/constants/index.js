@@ -138,7 +138,8 @@ export const experiences = [
             "Participated in guiding and providing constructive feedback on OAuth 2.0 and microservices to other developers in our product based project.",
             "Developed a reusable node that allows users to easily add Google Sheets functionality by drag and drop to any node in the Flow workflow module.",
             "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Collaborated with team members on Azure DevOps to ensure smooth code integration, push, pull, and commit operations."
+            "Collaborated with team members on Azure DevOps to ensure smooth code integration, push, pull, and commit operations.",
+            "Volunteerly involved in creating videos for OAuth 2.0 scope access for clover and google."
         ],
     },
     {
