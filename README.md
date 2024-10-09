@@ -11,3 +11,7 @@ Building a **Portfolio** in 3d is awesome, I have downloaded and modified the mo
 - **React Js**: For building a dynamic, responsive, and interactive UI.
 - **Tailwind CSS**: Provides utility-first CSS for responsive, fast, and customizable design.
 - **Three Js**: Provides a highly responsive system that loads 3d models seamlessly.
+
+References:
+- [Youtube](https://www.youtube.com/watch?v=FkowOdMjvYo)
+- [3d Model's](https://sketchfab.com/)
