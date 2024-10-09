@@ -46,7 +46,7 @@ const Contact = () => {
             title: "Thank you for your message 😃",
             width: 600,
             padding: "3em",
-            color: "#716add",
+            color: "#b45309",
             background: "#fff url(/images/trees.png)",
             backdrop: `
     rgba(0,0,123,0.4)
@@ -70,6 +70,7 @@ const Contact = () => {
             icon: "error",
             title: "Oops...",
             text: "I didn't receive your message 😢",
+            color: "#b45309",
           });
           showAlert({
             show: true,
