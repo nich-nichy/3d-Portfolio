@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import { FaArrowCircleRight } from "react-icons/fa";
 import { arrow } from "../assets/icons";
 
 const HomeInfo = ({ currentStage }) => {
@@ -20,8 +20,8 @@ const HomeInfo = ({ currentStage }) => {
           I worked with a company, <br />and picked up real time skills along the way.
         </p>
         <Link to='/about' className='bg-amber-800 py-2 px-4 m-2 rounded flex justify-center items-center gap-2 hover:bg-amber-600'>
-          View
-          <img src={arrow} alt='arrow' className='w-4 h-4 object-contain' />
+          About me
+          <FaArrowCircleRight className='w-4 h-4 object-contain' />
         </Link>
       </div>
     );
@@ -36,7 +36,7 @@ const HomeInfo = ({ currentStage }) => {
 
         <Link to='/projects' className='bg-amber-800 py-2 px-4 m-2 rounded flex justify-center items-center gap-2 hover:bg-amber-600'>
           Visit my portfolio
-          <img src={arrow} alt='arrow' className='w-4 h-4 object-contain' />
+          <FaArrowCircleRight className='w-4 h-4 object-contain' />
         </Link>
       </div>
     );
@@ -51,7 +51,8 @@ const HomeInfo = ({ currentStage }) => {
 
         <Link to='/contact' className='bg-amber-800 py-2 px-4 m-2 rounded flex justify-center items-center gap-2 hover:bg-amber-600'>
           Contact me
-          <img src={arrow} alt='arrow' className='w-4 h-4 object-contain' />
+          <FaArrowCircleRight className='w-4 h-4 object-contain' />
+
         </Link>
       </div>
     );
