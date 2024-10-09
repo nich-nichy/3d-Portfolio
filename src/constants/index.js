@@ -1,4 +1,6 @@
-import { aroopa, guvi } from "../assets/images";
+import {
+    aroopa, guvi, ors, nizzie, urlShort
+} from "../assets/images";
 import {
     car,
     contact,
@@ -176,35 +178,43 @@ export const socialLinks = [
 
 export const projects = [
     {
-        iconUrl: pricewise,
+        iconUrl: ors,
         theme: 'btn-back-red',
         name: 'ORS',
         description: 'An Online Vehicle Rental System, created as a task provided by Guvi',
-        link: '',
-        gitLink: ''
+        link: 'https://app.netlify.com/sites/ors-vehicle-renting/',
+        gitLink: 'https://github.com/nich-nichy/FSD61WD-T-VehicleRentalSystem-Frontend'
     },
     {
-        iconUrl: threads,
+        iconUrl: nizzie,
         theme: 'btn-back-green',
         name: 'Nizzie',
-        description: 'An automation builder that sends messages to discord',
+        description: 'An automation builder that sends messages to discord, This is still in progress',
         link: '',
         gitLink: ''
     },
     {
-        iconUrl: car,
-        theme: 'btn-back-blue',
-        name: 'OAuth Authenticator',
-        description: 'An package that authenticates third-party services, this project is still in progress',
-        link: '',
-        gitLink: ''
-    },
-    {
-        iconUrl: snapgram,
+        iconUrl: urlShort,
         theme: 'btn-back-pink',
-        name: 'AI Chatbot',
-        description: 'An AI agent set appointments, this project is still in progress',
-        link: '',
-        gitLink: ''
+        name: 'Url Shortner',
+        description: 'An URL shortner created as a task provided by Guvi',
+        link: 'https://url-shortner-t.netlify.app/login',
+        gitLink: 'https://github.com/nich-nichy/FSD61WD-T-URLShortener-Frontend'
     },
+    // {
+    //     iconUrl: car,
+    //     theme: 'btn-back-blue',
+    //     name: 'OAuth Authenticator',
+    //     description: 'An package that authenticates third-party services, this project is still in progress',
+    //     link: '',
+    //     gitLink: ''
+    // },
+    // {
+    //     iconUrl: snapgram,
+    //     theme: 'btn-back-pink',
+    //     name: 'AI Chatbot',
+    //     description: 'An AI agent set appointments, this project is still in progress',
+    //     link: '',
+    //     gitLink: ''
+    // },
 ];
