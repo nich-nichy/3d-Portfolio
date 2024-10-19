@@ -29,8 +29,8 @@ const Projects = () => {
                   src={project.iconUrl}
                   alt={project.name}
                   className="object-contain rounded"
-                  width={150}
-                  height={150}
+                  width={180}
+                  height={180}
                 />
               </div>
             </div>
@@ -39,19 +39,25 @@ const Projects = () => {
               <p className="mt-3 text-slate-500 max-w-sm">{project.description}</p>
               <div className="flex gap-4">
                 {/* View Button */}
-                <div className="mt-5 p-3 flex items-center gap-2 font-poppins">
-                  <Link
-                    to={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-semibold bg-sky-600 text-white py-2 px-4 rounded-lg hover:bg-sky-700 transition-transform transform hover:scale-105 shadow-lg"
-                  >
-                    <span className="flex items-center gap-2">
-                      <FaEye />
-                      <span>Live Demo</span>
-                    </span>
-                  </Link>
-                </div>
+
+                {project.link.length === 0 ? <>
+                  {null}
+                </> : <>
+                  <div className="mt-5 p-3 flex items-center gap-2 font-poppins">
+                    <Link
+                      to={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-semibold bg-sky-600 text-white py-2 px-4 rounded-lg hover:bg-sky-700 transition-transform transform hover:scale-105 shadow-lg"
+                    >
+                      <span className="flex items-center gap-2">
+                        <FaEye />
+                        <span>Live Demo</span>
+                      </span>
+                    </Link>
+                  </div>
+
+                </>}
 
                 {/* Source Code Button */}
                 <div className="mt-5 p-3 flex items-center gap-2 font-poppins">

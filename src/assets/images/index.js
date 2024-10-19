@@ -4,6 +4,8 @@ import logo from './logo.jpeg'
 import ors from './ors.png'
 import nizzie from './nizzie.png'
 import urlShort from './url-short.png'
+import udemy from './udemy.png'
+import crypt from './crypt.png'
 
 export {
     logo,
@@ -12,4 +14,6 @@ export {
     ors,
     nizzie,
     urlShort,
+    udemy,
+    crypt
 }
