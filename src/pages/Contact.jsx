@@ -111,7 +111,7 @@ const Contact = () => {
               type="email"
               name="email"
               className="input mt-2 p-3 border border-gray-300 rounded-lg focus:border-amber-600 focus:outline-none focus:ring focus:ring-amber-200 transition duration-200"
-              placeholder="Enter yor email"
+              placeholder="Enter your email"
               required
               value={form.email}
               onChange={handleChange}
